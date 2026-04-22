@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     /* box-sizing: border-box; */ /* tamaño = borde,relleno/padding y contenido */
+    /* Nuevo comentario */
 }
 body{
     background-color: black;
