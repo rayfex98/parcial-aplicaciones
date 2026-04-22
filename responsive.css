@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */ /* tamaño = borde,relleno/padding y contenido */
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: auto;
+}
+.formulario{
+    width: 600px;
+    height: 300px;
+    background-color: cadetblue;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.cajaHija{
+    width: 300px;
+    padding: 30px;
+    border: 3px solid red;
+}
+
+.tarjeta{
+    width: 20vw;
+    aspect-ratio: 1;
+    margin: 30px auto 0;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all .3s linear 1s;
+    }
+    img:hover{
+        scale: 1.3;  /* 1=100% */
+    }
+}
+
+
+
+
+@media (width<1000px){
+    body{
+        background-color: brown;
+    }
+}
+
+/* visibility:visible; por defecto
+visibility: hidden; transparenta
+display:none;       quita renderizado
+display: --------   flex,block, inline, grid y sus variantes */
